@@ -9,6 +9,18 @@ A modern, privacy-focused desktop suite for generating, customizing, styling, ba
 
 ---
 
+## 📸 Application Showcase
+
+| 🎯 Generator & Style Studio | 📷 Scanner & Live Camera Feed |
+| :---: | :---: |
+| ![Single Generator](screenshots/01_generator_studio.png) | ![QR Scanner](screenshots/02_scanner_studio.png) |
+
+| 📦 Batch Generation Studio | ⚙️ Settings & Privacy Logs |
+| :---: | :---: |
+| ![Batch Studio](screenshots/03_batch_studio.png) | ![Settings & Logs](screenshots/04_settings_privacy.png) |
+
+---
+
 ## ✨ Key Features
 
 ### 🎯 1. Interactive Single QR Generator
