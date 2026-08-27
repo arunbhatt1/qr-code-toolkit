@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qr-code-toolkit"
+version = "1.0.0"
+description = "A privacy-focused desktop application for generating, customizing, exporting, and scanning QR codes locally."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [
+    { name = "QR Code Toolkit Contributors" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Environment :: X11 Applications",
+    "Environment :: Win32 (MS Windows)",
+    "Topic :: Multimedia :: Graphics",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "customtkinter>=5.2.0",
+    "qrcode[pil]>=8.0",
+    "Pillow>=10.0.0",
+    "opencv-python>=4.8.0",
+    "darkdetect>=0.8.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-cov>=4.1.0",
+    "flake8>=7.0.0",
+    "black>=24.0.0",
+    "mypy>=1.8.0",
+]
+
+[project.scripts]
+qr-toolkit = "app.main:main"
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "-ra -q --cov=app --cov-report=term-missing"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+
+[tool.black]
+line-length = 100
+target-version = ['py312']
+
+[tool.mypy]
+python_version = "3.12"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false

@@ -1,0 +1,78 @@
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+bin/
+lib/
+include/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+*.manifest
+*.spec
+
+# Unit test & coverage reports
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs & run-time data
+logs/*.log
+*.log
+!logs/.gitkeep
+!screenshots/.gitkeep
+
+# Environment variables, secrets, keys & credentials
+.env
+.env.*
+*.env
+*.pem
+*.key
+*.token
+*secret*
+*credential*
+credentials.json
+token.json
+
+# Temporary files & test artifacts
+*.tmp
+*.bak
+*.temp
+/test_qr.*
+/my_qr.*
+/qrcode.*
+/cli_qr.*
+/wifi.*
+/contact.*
+/output_qr/
+/qr_folder/
